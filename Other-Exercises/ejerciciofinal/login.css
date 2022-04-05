@@ -1,0 +1,181 @@
+:root {
+    --purple-light: #7e3af2;
+    --purple-dark: #6c2bd9;
+    --orange-light: #feecdc;
+    --orange-dark: #ff5a1f;
+    --blue-dark: #e1effe;
+    --blue-dark: #3f83f8;
+    --green-light: #def7ec;
+    --green-dark: #0e9f6e;
+    --teal-light: #d5f5f6;
+    --teal-dark: #0694a2;
+    --red-light: #fde8e8;
+    --red-dark: #e02424;
+    --gray-light: #f4f5f7;
+    --gray-dark: #24262d;
+    --gray-medium: #E1DFDF;
+}
+
+body {
+    background-color: var(--gray-light);
+    font-family: Inter, system-ui, Roboto, Helvetica, Arial;
+    height: 100vh;
+    box-sizing: border-box;
+    margin: 0px;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: var(--gray-dark);
+}
+
+.wrapper {
+    background-color: white;
+    height: 650px;
+    width: 430px;
+    border-radius: 7px;
+
+    box-shadow: 1px 1px 40px #D2D0D0;
+    
+}
+
+.img {
+    height: 20%;
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+    background-image: url(https://images.pexels.com/photos/6177610/pexels-photo-6177610.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 25px;
+
+}
+
+.email {
+    background-color: white;
+    color: grey;
+    height: 2.4em;
+    width: 380px;
+    margin-bottom: 20px;
+    
+    border: solid var(--gray-medium) 1px;
+    border-radius: 7px;
+
+    display: flex;
+    align-items: center;
+}
+
+.password{
+    background-color: white;
+    color: grey;
+    height: 2.4em;
+    width: 380px;
+    
+    border: solid var(--gray-medium) 1px;
+    border-radius: 7px;
+
+    display: flex;
+    align-items: center;
+}
+
+.login {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    background-color: var(--purple-dark);
+    color: white;
+    height: 2.4em;
+    width: 380px;
+
+    border-radius: 7px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login:hover {
+    background-color: darkslateblue;
+}
+
+.Line {
+    background-color: var(--gray-medium);
+    color:var(--gray-medium);
+    height: 0.1px;
+    width: 380px;
+    
+}
+
+.gitButton {
+    margin-top: 20px;
+    background-color: white;
+    color: var(--gray-dark);
+    height: 2.4em;
+    width: 380px;
+
+    border: solid var(--gray-medium) 1px;
+    border-radius: 7px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.gitButton:hover {
+    background-color: var(--gray-light);
+}
+
+.twitterButton {
+    margin-top: 15px;
+    background-color: white;
+    color: var(--gray-dark);
+    height: 2.4em;
+    width: 380px;
+    
+    border: solid var(--gray-medium) 1px;
+    border-radius: 7px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.twitterButton:hover {
+    background-color: var(--gray-light);
+}
+
+.links > h4 > a {
+    color: var(--purple-dark);
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 768px ) {
+    .wrapper { 
+        width: 900px;
+        height: 600px;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .img {
+        border-radius: 0%;
+        border-top-left-radius: 7px;
+        width: 50%;
+        height: 100%;
+        background-image: url(https://images.pexels.com/photos/6177610/pexels-photo-6177610.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+        background-position: center;
+        background-size: cover;
+    }
+
+}

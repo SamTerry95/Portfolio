@@ -1,0 +1,549 @@
+:root {
+    --purple-light: #7e3af2;
+    --purple-dark: #6c2bd9;
+    --orange-light: #feecdc;
+    --orange-dark: #ff5a1f;
+    --blue-light: #e1effe;
+    --blue-dark: #3f83f8;
+    --green-light: #def7ec;
+    --green-dark: #0e9f6e;
+    --teal-light: #d5f5f6;
+    --teal-dark: #0694a2;
+    --red-light: #fde8e8;
+    --red-dark: #e02424;
+    --gray-light: #f4f5f7;
+    --gray-dark: #24262d;
+    --gray-medium: #E1DFDF;
+}
+
+body {
+    font-family: Inter, system-ui, Roboto, Helvetica, Arial;
+    margin: 0;
+    width: 100%;
+    background-color: var(--gray-light);
+
+}
+
+/* Side Navbar / Navbar 2 */
+.navBar2 {
+    width: 40vh;
+    height: 50vh;
+
+    background-color: white;
+    padding-bottom: 900px;
+
+    position: absolute;
+
+    display: none;
+}
+
+.navLogo {
+    display: flex;
+    align-items: center;
+    color: gray;
+}
+
+.navcontent2 {
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+.navlogoPrinc {
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+.insetborder {
+    border-left: var(--purple-light) 4px inset;
+}
+
+.navAddbutton {
+    width: 230px;
+    padding-left: 25px;
+    padding-top: 15px;
+}
+/* End Aside / Navbar 2 */
+
+/* Header - Navbar1 */
+.navBar {
+    height: 60px;
+    width: 100%;
+    background-color: white;
+
+    box-shadow: 1px 1px 10px #D2D0D0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.iconNav {
+    padding-left: 20px;
+}
+
+.navbarPictures {
+    display: flex;
+    align-items: center;
+
+    padding-right: 20px;
+}
+
+.searchBar{
+    height: 30px;
+    width: 50%;
+    background-color: var(--gray-light);
+    color: var(--gray-dark);
+    padding: 0 10px;
+
+    border-radius: 7px;
+
+    display: flex;
+    align-items: center;
+}
+
+.profilePhoto {
+    height: 40px;
+    width: 40px;
+
+    border-radius: 50%;
+}
+
+.tableProfilephoto {
+    height: 60px;
+    width: 60px;
+
+    border-radius: 50%;
+    display: none;
+}
+
+.purplecoloredIcons {
+    color: var(--purple-dark);
+    padding-right: 10px;
+}
+
+.fas.fa-circle {
+    color: red;
+    border: 1px white solid;
+    font-size: 10px;
+    justify-content:flex-end;
+    padding-right: 5px;
+    padding-top: 5px;
+
+
+    display: flex;
+}
+/* Final Header - Navbar1 */
+
+/* Main */
+.main {
+    padding: 10px 20px;
+}
+
+.newsButton {
+    height: 50px;
+    padding: 0 15px;
+    background-color: var(--purple-dark);
+    color: white;
+    border-radius: 8px;
+    margin-bottom: 35px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fas.fa-star {
+    color: white;
+    padding-right: 8px;
+}
+/* End wrapper */
+
+/* Datos */
+.dataButtons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 96%;
+    padding: 50 30px;
+}
+
+.clients {
+    height:70px;
+    background-color: white;
+    border: var(--gray-medium) 1px solid;
+    border-radius: 7px;
+    margin-bottom: 25px;
+
+    padding: 10px 10px;
+
+    display: flex;
+    justify-content:start;
+    align-items: center;
+    width: 100%;
+}
+
+
+.clientsIcon {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+
+    background-color: var(--orange-light);
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fas.fa-users {
+    color: var(--orange-dark);
+}
+
+.accounts {
+    height:70px;
+    background-color: white;
+    border: var(--gray-medium) 1px solid;
+    border-radius: 7px;
+    margin-bottom: 25px;
+
+    padding: 10px 10px;
+
+    display: flex;
+    justify-content:start;
+    align-items: center;
+    width: 100%;
+}
+
+.accountsIcon {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+
+    background-color: var(--green-light);
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.fas.fa-money-bill-wave-alt {
+    color: var(--green-dark);
+}
+
+.sales {
+    height:70px;
+    background-color: white;
+    border: var(--gray-medium) 1px solid;
+    border-radius: 7px;
+    margin-bottom: 25px;
+
+    padding: 10px 10px;
+
+    display: flex;
+    justify-content:start;
+    align-items: center;
+    width: 100%;
+}
+
+.salesIcon {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+
+    background-color: var(--blue-light);
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fas.fa-shopping-cart {
+    color: var(--blue-dark);
+}
+
+.contacts {
+    height:70px;
+    background-color: white;
+    border: var(--gray-medium) 1px solid;
+    border-radius: 7px;
+    margin-bottom: 25px;
+
+    padding: 10px 10px;
+
+    display: flex;
+    justify-content:start;
+    align-items: center;
+    width: 100%;
+}
+
+.contactsIcon {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+
+    background-color: var(--teal-light);
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fas.fa-comment-dots {
+    color: var(--teal-dark);
+}
+
+.dataPadding {
+    padding-left: 20px;
+}
+
+.boldText {
+    font-weight: bold; 
+}
+/* Final Datos */
+
+/* Table */
+table {
+    border: 1px solid var(--gray-medium);
+    border-spacing: 0;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+}
+
+th, td {
+    border-bottom: 1px solid #ddd;
+  }
+
+.tableheadStyle {
+    padding-right: 190px;
+    color: var(--gray-dark);
+}
+
+.extraPadding {
+    padding-left: 30px;
+}
+
+.tablePadding {
+    padding-left: 20px;
+}
+
+.tableStyle {
+    height: 100px;
+    width: 100%;
+    background-color: white;
+    border: 1px var(--gray-medium) solid;
+    
+}
+
+.tableStyle2 {
+    height: 60px;
+    background-color: var(--gray-light);
+    width: 100%;
+
+    border: 1px var(--gray-medium) solid;
+    border-radius: 7px;
+}
+
+.fullUser {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.userdiv1 {
+    margin-left: 10px;
+    margin-top: 15px;
+}
+
+.userdiv2 {
+    margin-left: 10px;
+}
+
+
+.numberBar {
+    background-color: var(--gray-light);
+    border: 1px var(--gray-medium) solid;
+    color: var(--gray-dark);
+
+    border-radius: 7px;
+}
+
+.numberbarTitle {
+    padding: 10px 20px;
+}
+
+.numberSlider {
+    width: 30%;
+    color: var(--gray-dark);
+    padding: 10px 20px;
+
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15px;
+}
+
+.greycolor {
+    color: var(--gray-dark);
+}
+
+.falsehover:hover {
+    cursor: pointer;
+    background-color: var(--purple-dark);
+}
+
+
+/* End Table */
+
+/* Table icon styles */
+.approved {
+    height: 30px;
+    width: 100px;
+    border-radius: 10px;
+    background-color: var(--green-light);
+    color: var(--green-dark);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.denied {
+    height: 30px;
+    width: 70px;
+    border-radius: 10px;
+    background-color: var(--red-light);
+    color: var(--red-dark);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.expired {
+    height: 30px;
+    width: 80px;
+    border-radius: 10px;
+    background-color: var(--gray-light);
+    color:var(--gray-dark);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*  MEDIA QUERIES  */
+
+    /* Tablet */
+    @media only screen and (min-width: 768px ) {
+    .tableProfilephoto {
+        display: flex;
+    }
+
+    .navBar2 {
+        display:block;
+    }
+
+    .navBar1 {
+        padding-left: 200px;
+    }
+
+    .searchBar {
+        margin-left: 250px;
+    }
+
+    .pagewrapper {
+        margin-left: 300px;
+    }
+
+    .dataButtons {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        width: 100%;
+    }
+   
+    .clients {
+        width: 90%;
+        
+    }
+
+    .accounts {
+        width: 90%;
+    }
+
+    .sales {
+        width: 90%;
+    }
+
+    .contacts {
+        width: 90%;
+    }
+   
+    /* Escritorio normal */
+    @media only screen and (min-width: 1024px ) {
+        .tableProfilephoto {
+            display: flex;
+        }
+    
+        .navBar2 {
+            display:block;
+        }
+    
+        .pagewrapper {
+            margin-left: 300px;
+        }
+    
+        .dataButtons {
+            width: 97%;
+        }
+    }
+    
+
+
+    /* Escritorio grande */
+    @media only screen and (min-width: 1200px ) {
+        .main {
+            margin-right: 180px;
+        }
+        .tableProfilephoto {
+            display: flex;
+        }
+    
+        .navBar2 {
+            display:block;
+        }
+            
+        .pagewrapper {
+            margin-left: 500px;
+        }
+
+        .numberBar {
+            display: flex;
+            justify-content: space-between;
+
+            padding-top: 15px;
+        }
+
+        .searchBar {
+            width: 600px;
+            margin-left: 180px;
+        }
+
+        .navbarPictures {
+            padding-right: 200px;
+        }
+
+        .dataButtons {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content:space-evenly;
+            gap: 30px;
+            width:100%;
+        }
+    }}
