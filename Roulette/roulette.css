@@ -1,0 +1,369 @@
+body{
+    background-color: rgb(32, 130, 110);
+    margin: 10px;
+    font-family: initial;
+}
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    padding-top: 190px;
+}
+
+.mainImg {
+    height: 15rem;
+    padding: 0;
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+    background-image: url(../Index/Main\ Img.jpeg);
+    background-size: cover;
+    background-position: bottom;
+}
+
+.container-fluid {
+    padding: 0%;
+    background-color: rgb(10, 68, 73);
+}
+
+.navbar {
+    padding: 0%;
+}
+
+a {
+    margin-right: 30px;
+    color: black;
+}
+
+.nav-link:hover {
+    color: rgb(2, 188, 188);
+    box-shadow: 1px 1px 10px rgb(2, 188, 188);
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+
+#page {
+    display: block;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.roulette {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+#outerBox {
+    display: block;
+    position: absolute;
+    width: 90%;
+    height: 6%;
+    background-color: rgb(5, 141, 64);
+    color: white;
+    left: 5%;
+    top: 65%;
+    text-align: center;
+}
+
+.allNumbers {
+    margin-top: 0.6%;
+}
+
+#outerBall {
+    width: 1.5%;
+    height: 40%;
+    border-radius: 50%;
+    background-color: silver;
+    float: left;
+    margin-top: 0.9%;
+    margin-left: 4%;
+}
+
+.outerCero {
+    margin-left: 6%;
+    width: 2%;
+    height: 60%;
+    border: 1px solid white;
+    background-color: rgb(3, 107, 48);
+    float: left;
+}
+
+.outerRed {
+    width: 2%;
+    height: 60%;
+    border: 1px solid white;
+    background-color: red;
+    float: left;
+}
+
+.outerBlack {
+    width: 2%;
+    height: 60%;
+    border: 1px solid white;
+    background-color: black;
+    float: left;
+}
+
+.box {
+    display: block;
+    position: absolute;
+    width: 60%;
+    height: 60%;
+    background-color: rgb(5, 141, 64);
+    left: 20%;
+    top: 75%;
+    padding: 1.5% 1.5%;
+}
+
+.quickFix {
+    display: block;
+    position: absolute;
+    width: 6%;
+    height: 60%;
+    background-color: rgb(5, 141, 64);
+    left: 17%;
+    top: 75%;
+}
+
+.red {
+    display: block;
+    width: 7.7%;
+    height: 15%;
+    background-color: red;
+    float: left;
+    border: 0.1px solid white;
+    text-align: center;
+}
+
+.black {
+    display: block;
+    width: 7.7%;
+    height: 15%;
+    background-color: black;
+    float: left;
+    border: 0.1px solid white;
+    text-align: center;
+}
+
+.boldNumber {
+    color: white;
+    display: inline-block;
+    
+}
+
+.lastColumn {
+    color: white;
+    display: inline-block;
+    
+}
+
+.secondLastRow {
+    display: inline-block;
+    
+}
+
+.bet1Column {
+    display: block;
+    float: left;
+    width: 30.85%;
+    height: 13%;
+    background-color: rgb(3, 107, 48);
+    border: 0.4px solid white;
+    color: white;
+    text-align: center;
+}
+
+.bet1Row {
+    display: block;
+    float: left;
+    width: 7.6%;
+    height: 15%;
+    background-color: rgb(3, 107, 48);
+    border: 0.1px solid white;
+    text-align: center;
+}
+
+.lastRow {
+    display: block;
+    float: left;
+    width: 15.43%;
+    height: 13%;
+    border: 0.3px solid white;
+    color: white;
+    text-align: center;
+}
+
+#lastRow {
+    display: inline-block;
+    
+}
+
+#red-black {
+    display: block;
+    width: 70%;
+    height: 70%;
+    background-color: red;
+    margin: 6% 15%;
+    border: 2px solid white;
+}
+
+#black-red {
+    display: block;
+    width: 70%;
+    height: 70%;
+    background-color: black;
+    margin: 6% 15%;
+    border: 2px solid white;
+}
+
+#numberCero {
+    display: block;
+    position: absolute;
+    right: 97.5%;
+    top: 5.3%;
+    width: 5%;
+    height: 40.5%;
+    border: 0.5px solid white;
+    background-color: rgb(3, 107, 48);
+    margin-left: 2%;
+}
+
+.numberCero {
+    display: inline-block;
+    color: white;
+    margin: 150% 43%;
+}
+
+#spin {
+    display: block;
+    position: absolute;
+    width: 8%;
+    height: 8%;
+    left: 44%;
+    top: 120.5%;
+    color: white;
+    background-color: rgb(32, 130, 110);
+    border: 3px solid darkslategrey;
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+
+#spin:hover {
+    color: white;
+    box-shadow: 1px 1px 10px rgb(2, 188, 188);
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+
+#ball {
+    display: block;
+    position: absolute;
+    left: 41%;
+    top: 123%;
+    width: 1.5%;
+    height: 3%;
+    border-radius: 50%;
+    background-color: silver;
+}
+
+#bet {
+    position: absolute;
+    width: 8%;
+    height: 5%;
+    top: 119%;
+    left: 60%;
+    background-color: white;
+    border: 3px solid darkslategrey;
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+    text-align: center;
+    
+}
+
+#betButton {
+    position: absolute;
+    width: 5%;
+    height: 5%;
+    top: 124.5%;
+    left: 61.5%;
+    color: white;
+    background-color: rgb(32, 130, 110);
+    border: 3px solid darkslategrey;
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+
+#betButton:hover {
+    color: white;
+    box-shadow: 1px 1px 10px red;
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+
+#money {
+    position: absolute;
+    width: 8%;
+    height: 5%;
+    top: 122%;
+    left: 28%;
+    background-color: white;
+    border: 3px solid darkslategrey;
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+    text-align: center;
+}
+
+@keyframes animate {
+    from {transform: sclae(0);}
+    to {transform: scale(2);}
+}
+
+
+.footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(10, 68, 73);
+    color: black;
+    text-align: center;
+  }
+
+  .footerTitle {
+      font-weight: bold;
+  }
+
+  .websiteLinks {
+      margin-right: 2px;
+      text-decoration: none;
+      font-size: large;
+      font-weight: bold;
+  }
+
+  .websiteLinks:hover {
+      color: white;
+  }
+
+  .outsideLinks {
+      padding-left: 10px;
+      font-size: xx-large;
+  }
+
+  .outsideLinks:hover {
+      color: white;
+  }
