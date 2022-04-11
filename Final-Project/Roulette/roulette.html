@@ -34,7 +34,7 @@
                     <a class="nav-link" href="../Bingo/bingo.html">Bingo</a>
                     <a class="nav-link" href="../Ranking/ranking.html">Ranking</a>
                     <a class="nav-link" href="../Contact/contact.html">Contact</a>
-                    <a class="nav-link" href="../Sign Up/signUp.html">Sign up</a>
+                    <a class="nav-link" href="../Sign-Up/signUp.html">Sign up</a>
                     <a class="nav-link" href="../Login/login.html">Login</a>
                 </div>
             </div>
@@ -86,7 +86,7 @@
             <div class="outerBlack allNumbers">31</div>
             <div class="outerRed allNumbers">34</div>
         </div>
-        
+
         <div class="quickFix"></div>
         <div class="box">
             <div class="red"><b class="boldNumber">3</b></div>
@@ -131,12 +131,24 @@
             <div class="bet1Column"><b class="secondLastRow">1st 12</b></div>
             <div class="bet1Column"><b class="secondLastRow">2nd 12</b></div>
             <div class="bet1Column"><b class="secondLastRow">3rd 12</b></div>
-            <div class="lastRow"><div id="lastRow"><b>1-18</b></div></div>
-            <div class="lastRow"><div id="lastRow"><b>EVEN</b></div></div>
-            <div class="lastRow"><div id="red-black"><b></b></div></div>
-            <div class="lastRow"><div id="black-red"><b></b></div></div>
-            <div class="lastRow"><div id="lastRow"><b>ODD</b></div></div>
-            <div class="lastRow"><div id="lastRow"><b>19-36</b></div></div>
+            <div class="lastRow">
+                <div id="lastRow"><b>1-18</b></div>
+            </div>
+            <div class="lastRow">
+                <div id="lastRow"><b>EVEN</b></div>
+            </div>
+            <div class="lastRow">
+                <div id="red-black"><b></b></div>
+            </div>
+            <div class="lastRow">
+                <div id="black-red"><b></b></div>
+            </div>
+            <div class="lastRow">
+                <div id="lastRow"><b>ODD</b></div>
+            </div>
+            <div class="lastRow">
+                <div id="lastRow"><b>19-36</b></div>
+            </div>
             <div id="numberCero"><b class="numberCero">0</b></div>
         </div>
         <input type="submit" value="Spin" id="spin" name="spin">
@@ -144,11 +156,11 @@
         <input type="text" placeholder="Place your bet" id="bet">
         <input type="button" value="Bet" id="betButton">
         <input type="text" placeholder="Money" id="money">
-        
-        
+
+
     </div>
 
-     <!-- End of Roulette -->
+    <!-- End of Roulette -->
 
     <!-- Footer -->
 
@@ -177,7 +189,7 @@
         function spin() {
             let b = document.getElementById('outerball');
             let c = 385;
-            outerBall.style.cssText = "transition: transform 1s; transform: translateX("+c+"px)";
+            outerBall.style.cssText = "transition: transform 1s; transform: translateX(" + c + "px)";
         }
     </script>
 
@@ -190,22 +202,22 @@
         b2.addEventListener("click", bet);
 
         function bet() {
-            for(i=0;i<b3.length;i++) {
+            for (i = 0; i < b3.length; i++) {
                 b3[i].addEventListener("click", element);
                 function element() {
                     let b5 = document.createElement('div');
-                    let b6 = document.createTextNode(b1.value+"$");
+                    let b6 = document.createTextNode(b1.value + "$");
                     window.d = this.innerHTML;
                     b5.appendChild(b6);
                     this.appendChild(b5);
                     b5.style.cssText = "position:absolute;width:5%;height:5%;border-radius:7%;background-color:rgb(32, 130, 110);color:black;text-align: center;margin-left:1%";
                 }
             }
-            for(j=0;j<b4.length;j++) {
+            for (j = 0; j < b4.length; j++) {
                 b4[j].addEventListener("click", element2);
                 function element2() {
                     let b5 = document.createElement('div');
-                    let b6 = document.createTextNode(b1.value+"$");
+                    let b6 = document.createTextNode(b1.value + "$");
                     window.d = this.innerHTML;
                     b5.appendChild(b6);
                     this.appendChild(b5);
@@ -216,9 +228,9 @@
 
         var s = document.getElementById('spin');
         var m = document.getElementById('money');
-        s.onclick = function() {spin()};
+        s.onclick = function () { spin() };
 
-        function spin(){
+        function spin() {
             if (m.value < b1.value) {
                 notEnough();
             } else {
@@ -231,9 +243,9 @@
         }
 
         function start() {
-            var r = Math.floor(Math.random()* 37);
-            
-            if (r==parseInt(d,10)) {
+            var r = Math.floor(Math.random() * 37);
+
+            if (r == parseInt(d, 10)) {
                 win();
             } else {
                 loose();
@@ -246,12 +258,12 @@
         }
 
         function win() {
-            if (d>=0 && d<=36) {
-                alert('You have won!: ' + (b1.value*36) + '$');
-                m.value = parseInt(m.value,10) + (parseInt(b1.value)*36);
+            if (d >= 0 && d <= 36) {
+                alert('You have won!: ' + (b1.value * 36) + '$');
+                m.value = parseInt(m.value, 10) + (parseInt(b1.value) * 36);
             } else {
-                alert ('You have won: ' + (b1.value*2) + '$');
-                m.value = m.value + (b1.value*2);
+                alert('You have won: ' + (b1.value * 2) + '$');
+                m.value = m.value + (b1.value * 2);
             }
         }
     </script>
