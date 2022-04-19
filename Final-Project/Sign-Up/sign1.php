@@ -6,6 +6,11 @@ if ($a->connect_errno){
 } else {
    $b = 'SELECT * FROM users';
    $c = $a->query($b);
+   print_r($c);
+   if($c->num_rows>0) {
+       $d = $c->fetch_assoc();
+       print_r($d);
+   }
 }
 
 ?>
