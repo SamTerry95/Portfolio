@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Discoveryvip.com">
+    <title>Quick Website from Scratch </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #eee;
+        }
+
+        a {
+            text-decoration: none;
+            color: darkblue;
+        }
+
+        a:hover {
+            color: cornflowerblue;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        .container {
+            background-color: white;
+        }
+
+        .brd {
+            border: 1px solid black;
+        }
+
+        #logo {
+            float: left;
+            width: 40%;
+            text-align: left;
+            margin: 0;
+        }
+
+        #welcome {
+            padding: 30px 0;
+            margin: 30px 0;
+            background-color: #ddd;
+            border-radius: 15px;
+        }
+
+        .welcomeHeader {
+            font-size: 2em;
+            padding: 10px;
+        }
+
+        #welcome p {
+            font-size: 1em;
+            padding: 10px;
+            margin-left: 15px;
+        }
+
+        .content {
+            float: left;
+            width: 60%;
+        }
+
+        .sidemenu {
+            background-color: #eee;
+            float: right;
+            width: 40%;
+            padding: 5px;
+        }
+
+        #footer {
+            clear: both;
+            text-align: center;
+            margin: 20px 0;
+            padding: 10px 5px;
+        }
+
+        .fa-bars {
+            font-size: 2em;
+        }
+
+        @media only screen and (max-width:700px) {
+
+            .content {
+                float: none;
+                width: 100%;
+            }
+
+            .sidemenu {
+                float: none;
+                width: 100%;
+            }
+
+            #logo {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header" class="container">
+        <nav class="navbar navbar-default navbar-fixed-bottom">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#navbar"><i class="fa fa-bars"></i></button>
+                    <a href="#" class="navbar-brand">Company Name</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <div class="container ">
+        <div id="welcome">
+            <div class="welcomeHeader">Welcome to my website</div>
+            <p>Please look around and enjoy.</p>
+        </div>
+    </div>
+    <section class="container ">
+        <section class="content ">
+            <h1>Content about the site</h1>
+            <p>Lorem ipsum dolor sit amet, <a href="#">consectetuer adipiscing</a> elit. Aenean commodo ligula eget
+                dolor.</p>
+
+            <p>Aenean massa. <a href="#">consectetuer adipiscing</a> Cum sociis natoque penatibus et magnis dis
+                parturient montes, nascetur ridiculus mus.</p>
+
+            <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. <a href="#">consectetuer
+                    adipiscing</a> Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec,
+                vulputate</p>
+        </section>
+        <aside class="sidemenu brd">Sidemenu
+            <p>Ads
+                <br><img src="https://via.placeholder.com/250x150">
+            </p>
+            <p>Ads
+                <br><img src="https://via.placeholder.com/250x150">
+            </p>
+        </aside>
+    </section>
+    <footer id="footer">Company copyright 2016 ©</footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
